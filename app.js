@@ -93,6 +93,7 @@ app.post('/login', async (req, res) => {
         };
 
         res.render("secrets");
+        // res.redirect('http://192.168.18.194:4002') //test redirect to neodash
 
     } catch (error) {
         console.error("Error during login:" ,error);
@@ -106,5 +107,5 @@ app.get('/logout', (req, res) => {
 });
 
 app.listen(3000, ()=>{
-    console.log(`Server running on port ${port}`)
+    console.log(`Server running on port 3000`)
 });
